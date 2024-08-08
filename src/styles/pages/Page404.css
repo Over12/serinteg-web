@@ -34,3 +34,25 @@
   margin-top: 2rem;
   font-size: 1.2rem;
 }
+
+@media screen and (max-width: 640px) {
+  .page-404 {
+    text-align: center;
+  }
+
+  .page-404 h1 {
+    font-size: 1.5rem;
+  }
+
+  .page-404 h2 {
+    font-size: 2rem;
+  }
+
+  .page-404 p {
+    font-size: 1rem;
+  }
+
+  .page-404 a {
+    font-size: 1rem;
+  }
+}
