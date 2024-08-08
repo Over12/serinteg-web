@@ -13,7 +13,7 @@ export function Navbar () {
   return (
     <nav>
       <div className='logo'>
-        <img src='/assets/images/SERINTEG_Banner.png' alt='Logo de SERINTEG' />
+        <img src='/assets/images/SERINTEG_Banner.webp' alt='Logo de SERINTEG' />
       </div>
       <div className='menu-icon'>
         <IconMenu isOpen={ open } onClick={ handleClick }/>
