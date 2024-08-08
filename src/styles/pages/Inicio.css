@@ -1,0 +1,225 @@
+main .hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  max-width: 50%;
+  text-wrap: pretty;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: left;
+  gap: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-text span {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.hero-text h2 {
+  width: 100%;
+  font-size: 2rem;
+}
+
+.hero-text .button-contacto {
+  background-color: var(--accent);
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border: 2px solid var(--text);
+  border-radius: 5px;
+  color: var(--text);
+  font-weight: bold;
+}
+
+.hero-text .button-contacto:hover {
+  background-color: var(--primary);
+}
+
+.hero-image img {
+  width: 400px;
+  height: auto;
+  filter: drop-shadow(.4rem .3rem 0 var(--primary)) drop-shadow(.4rem .3rem 0 var(--secondary));
+  animation: floating 5s infinite ease-in-out;
+  transition: all .3s ease;
+  transform-origin: center;
+}
+
+.hero-image img:hover {
+  filter: drop-shadow(0rem 0rem 3rem var(--accent));
+  transform: scale(2);
+}
+
+section {
+  padding: 0 5rem;
+}
+
+.titulo-section {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin: 2.5rem 0 3.5rem 0;
+}
+
+.about h2 span {
+  color: #edbaff;
+  opacity: 0.7;
+}
+
+.about h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.about .valores {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.section-about {
+  margin-top: 4rem;
+}
+
+.marcas {
+  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.marcas .large {
+  width: 10rem;
+  transition: all .3s ease;
+}
+
+.marcas .circle {
+  width: 6rem;
+  transition: all .3s ease;
+}
+
+.marcas img:hover {
+  filter: drop-shadow(0rem 0rem 4rem #edbaff);
+  transform: scale(1.1);
+}
+
+.servicios {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4rem;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main {
+    padding: 0 40px;
+  }
+
+  section {
+    padding: 0 40px;
+  }
+
+  main .hero{
+    flex-direction: column;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-text h1 span {
+    font-size: 1.7rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text .button-contacto {
+    font-size: 1.1rem;
+  }
+
+  .hero-image img {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .about .valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .titulo-section {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 2rem 0 4rem 0;
+  }
+
+  .about h3 {
+    font-size: .8rem;
+    font-weight: 500;
+    opacity: 0.7;
+  }
+
+  .section-about {
+    margin-top: 2rem;
+  }
+
+  .marcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .marcas .large {
+    width: 10rem;
+  }
+  
+  .marcas .circle {
+    width: 6rem;
+  }
+
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5rem;
+  }
+}

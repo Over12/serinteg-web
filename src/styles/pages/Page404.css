@@ -1,0 +1,36 @@
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
+  height: 100vh;
+  background-image: url('assets/images/404.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.page-404 h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.page-404 h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.page-404 p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.page-404 a {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}

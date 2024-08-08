@@ -1,0 +1,96 @@
+nav {
+  background: linear-gradient(85.2deg, rgba(0, 0, 0, 0.5) 10.5%, rgba(33, 9, 42, 0.5) 88.7%);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5rem;
+  border-bottom: 2px solid #86234160;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  max-height: 130px;
+}
+
+nav .logo img {
+  width: 300px;
+  height: auto;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.menu a:hover {
+  color: var(--text);
+  opacity: 0.5;
+}
+
+.button-ingresar {
+  background-color: var(--accent);
+  padding: 0.7rem 1rem;
+  border: 2px solid var(--text);
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh; /* Cambiado de 100dvb a 100vh para mayor compatibilidad */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: var(--background);
+    font-size: 2rem;
+  }
+
+  .button-ingresar {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    padding: 2rem 3rem;
+  }
+
+  nav .logo img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  nav .logo img {
+    width: 70%;
+    height: auto;
+  }
+
+  nav {
+    padding: 0.5rem 2rem;
+  }
+
+  .menu {
+    font-size: 1.7rem;
+  }
+}

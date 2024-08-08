@@ -1,0 +1,40 @@
+.card-client-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ffffff80;
+  background-color: #dfb3ff20;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 150px;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.card-client-square img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.card-client-square span {
+  font-size: 1.2rem;
+  color: var(--text);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.card-client-square:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--primary);
+  background-color: #dfb3ff2f;
+  box-shadow: 0 0 20px var(--primary);
+}
+
+.card-client-square:hover span {
+  color: var(--accent);
+}

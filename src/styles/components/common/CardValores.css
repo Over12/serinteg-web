@@ -1,0 +1,37 @@
+.card-valores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .7rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #21092aa1;
+  border: 2px solid var(--primary);
+  max-width: 350px;
+  transition: all .3s;
+}
+
+.card-valores img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-valores h3 {
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-weight: bold;
+  opacity: 1;
+  margin: 0;
+}
+
+.card-valores p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.card-valores:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0rem 0rem 4rem #380f46);
+  border: 2px solid var(--accent);
+}
