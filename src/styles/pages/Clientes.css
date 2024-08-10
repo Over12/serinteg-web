@@ -59,6 +59,12 @@
   border-radius: 10px;
   object-fit: cover;
   border: 2px solid var(--accent);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.gallery-trabajo img:hover {
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 640px) {
