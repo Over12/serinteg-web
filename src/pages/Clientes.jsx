@@ -2,6 +2,7 @@ import { Navbar } from "../components/ui/Navbar"
 import { CardClientsLarge } from "../components/common/CardClientsLarge"
 import { CardClientsSquare } from "../components/common/CardClientsSquare"
 import { ImageModal } from "../components/ui/ImageModal"
+import { WhatsAppIcon } from "../components/common/WhatsAppIcon"
 import { Footer } from "../components/ui/Footer"
 import { useState } from 'react'
 import { CLIENTES_LARGE, CLIENTES_SQUARE, IMAGES_TRABAJOS } from "../constants/dataConstants"
@@ -56,6 +57,7 @@ export function Clientes () {
           </div>
         ))}
       </section>
+      <WhatsAppIcon />
       <Footer />
 
       {modalOpen && (

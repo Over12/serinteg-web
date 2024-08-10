@@ -16,10 +16,10 @@ export function Servicios () {
       </main>
       <section className='section-services'>
         {INFO_SERVICIOS.map((servicios) => (
-          <>
+          <div key={servicios.id}>
             <h2 className='titulo-section'>{servicios.title}</h2>
-            <SectionServices key={servicios.id} {...servicios} />
-          </>
+            <SectionServices {...servicios} />
+          </div>
         ))}
       </section>
       <WhatsAppIcon />
