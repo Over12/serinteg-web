@@ -40,6 +40,8 @@ main .hero{
   border-radius: 5px;
   color: var(--text);
   font-weight: bold;
+  cursor: pointer;
+  transition: all .3s ease;
 }
 
 .hero-text .button-contacto:hover {

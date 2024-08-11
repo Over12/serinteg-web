@@ -1,5 +1,7 @@
 import '../styles/pages/Inicio.css'
+import { useState } from 'react'
 import { Navbar } from '../components/ui/Navbar'
+import { Contacto } from '../components/ui/Contacto'
 import { Footer } from '../components/ui/Footer'
 import { CardValores } from '../components/common/CardValores'
 import { CardServices } from '../components/common/CardServices'
@@ -7,6 +9,12 @@ import { WhatsAppIcon } from '../components/common/WhatsAppIcon'
 import { MARCAS, SERVICIOS, VALORES } from '../constants/dataConstants'
 
 export function Inicio() {
+  const [modalOpen, setModalOpen] = useState(false)
+
+  const handleOpenModal = () => {
+    setModalOpen(!modalOpen)
+  }
+
   return (
     <>
       <Navbar />
@@ -15,12 +23,13 @@ export function Inicio() {
           <div className='hero-text'>
             <h1>¿Buscas <span>optimizar</span> tu <span>infraestructura tecnológica</span>?</h1>
             <h2>Transforma tus servicios y soluciones tecnológicas en resultados reales</h2>
-            <a className='button-contacto' href="#">Contáctanos</a>
+            <button className='button-contacto' onClick={handleOpenModal}>Contáctanos</button>
           </div>
           <div className='hero-image'>
             <img src="/assets/images/laptop.webp" alt="Imagen de laptop" />
           </div>
         </div>
+        {modalOpen && <Contacto handleOpenModal={handleOpenModal} />}
       </main>
       <section className='about'>
         <h3>SOBRE NOSOTROS</h3>
