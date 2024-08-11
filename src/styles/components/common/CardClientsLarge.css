@@ -12,6 +12,15 @@
   width: 300px;
   height: 150px;
   transition: all 0.3s;
+  
+  view-timeline-name: --card-client-large;
+  view-timeline-axis: block;
+
+  animation-timeline: --card-client-large;
+  animation-name: scaleElement;
+
+  animation-range: entry 10% cover 30%;
+  animation-fill-mode: both;
 }
 
 .card-client-large img {

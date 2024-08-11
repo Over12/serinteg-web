@@ -8,6 +8,15 @@
     "a a b c"
     "a a d d";
   margin-bottom: 5rem;
+
+  view-timeline-name: --section-services;
+  view-timeline-axis: block;
+
+  animation-timeline: --section-services;
+  animation-name: scaleElement;
+
+  animation-range: entry 10% cover 35%;
+  animation-fill-mode: both;
 }
 
 .services-gallery div {

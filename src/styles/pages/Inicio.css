@@ -104,6 +104,26 @@ section {
   gap: 20px;
 }
 
+.marcas img {
+  view-timeline-name: --image-marcas;
+  view-timeline-axis: block;
+
+  animation-timeline: --image-marcas;
+  animation-name: scaleElement;
+
+  animation-range: entry 10% cover 35%;
+  animation-fill-mode: both;
+}
+
+@keyframes scaleElement {
+  from {
+    transform: scale(.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 .marcas .large {
   width: 10rem;
   transition: all .3s ease;
