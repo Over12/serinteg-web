@@ -109,9 +109,9 @@ section {
   view-timeline-axis: block;
 
   animation-timeline: --image-marcas;
-  animation-name: scaleElement;
+  animation-name: showElement;
 
-  animation-range: entry 10% cover 35%;
+  animation-range: entry 10% cover 50%;
   animation-fill-mode: both;
 }
 
@@ -121,6 +121,15 @@ section {
   }
   to {
     transform: scale(1);
+  }
+}
+
+@keyframes showElement {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

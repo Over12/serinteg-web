@@ -16,7 +16,7 @@
   animation-timeline: --card-valores;
   animation-name: show;
 
-  animation-range: entry 10% cover 35%;
+  animation-range: entry 10% cover 50%;
   animation-fill-mode: both;
 }
 
