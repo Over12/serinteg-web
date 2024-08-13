@@ -47,7 +47,7 @@ export function Contacto({ handleOpenModal }) {
           <h1>CONTÁCTANOS</h1>
           <form className='form-contact' onSubmit={handleSubmit(onSubmit)}>
             <div className='input-group'>
-              <label htmlFor='name'>Nombre</label>
+              <label htmlFor='name'>Empresa/Nombre completo</label>
               <input type='text' id='name' {...register('name')} />
               {errors.name && <span className='error-modal-contact'>{errors.name.message}</span>}
             </div>
