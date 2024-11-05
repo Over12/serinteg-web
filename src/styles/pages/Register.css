@@ -1,0 +1,86 @@
+.section-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  background-color: #0000001c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register h1 {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.form-register input, .form-register select {
+  padding: 10px;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+}
+
+.form-register option {
+  background-color: var(--background);
+}
+
+.form-register span, .form-register select, .form-register option {
+  font-weight: 300;
+  font-size: .9rem;
+  color: var(--text);
+}
+
+.form-register span a {
+  color: var(--secondary);
+}
+
+.form-register span a:hover {
+  text-decoration: underline;
+}
+
+.form-register button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-register button:hover {
+  background-color: var(--secondary);
+}
+
+.form-register .error {
+  color: #bb1a1a;
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.form-register .success {
+  color: #1abb1a;
+  font-size: .8rem;
+  font-weight: 300;
+}

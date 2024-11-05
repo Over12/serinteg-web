@@ -23,7 +23,7 @@ export function Navbar () {
         <li><NavLink to='/servicios'>Servicios</NavLink></li>
         <li><NavLink to='/bitdefender'>BitDefender</NavLink></li>
         <li><NavLink to='/clientes'>Clientes</NavLink></li>
-        <li><NavLink className='button-ingresar' to="#">Ingresar</NavLink></li>
+        <li><NavLink className='button-ingresar' to='https://serinteg-dashboard-v2.vercel.app/'>Ingresar</NavLink></li>
       </ul>
     </nav>
   )
