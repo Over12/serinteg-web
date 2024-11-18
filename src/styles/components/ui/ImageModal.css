@@ -30,6 +30,7 @@
   height: 40px;
   border-radius: 50%;
   border: 2px solid var(--accent);
+  z-index: 9999;
 }
 
 .close-modal-button:hover {
